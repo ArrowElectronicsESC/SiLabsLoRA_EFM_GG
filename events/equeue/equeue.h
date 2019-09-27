@@ -77,8 +77,7 @@ typedef struct equeue {
         void *timer;
     } background;
 
-    //OS_SEM eventsema;
-    OS_FLAG_GRP eventsema;
+    OS_SEM eventsema;
     OS_MUTEX queuelock;
     OS_MUTEX memlock;
 } equeue_t;
